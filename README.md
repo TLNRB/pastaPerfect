@@ -1,6 +1,6 @@
-//This website was created to contain pasta recepies.
+This website contains pasta recepies.
 
-//Created by 
+Created by 
     HTML
     CSS
     JavaScript
