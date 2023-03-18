@@ -517,12 +517,24 @@ video {
   position: fixed;
 }
 
-.sticky {
-  position: sticky;
+.absolute {
+  position: absolute;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .top-0 {
   top: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .ml-auto {
@@ -533,36 +545,33 @@ video {
   margin-right: 0.75rem;
 }
 
-.mr-\[2\.75rem\] {
-  margin-right: 2.75rem;
-}
-
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-16 {
   height: 4rem;
 }
 
-.h-\[200vh\] {
-  height: 200vh;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .w-\[100\%\] {
   width: 100%;
 }
 
-.w-\[100\\\%\] {
-  width: 100\%;
+.translate-y-\[-200\%\] {
+  --tw-translate-y: -200%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -573,8 +582,8 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[2\.75rem\] {
-  gap: 2.75rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .bg-darkCardBG {
@@ -582,21 +591,49 @@ video {
   background-color: rgb(236 229 219 / var(--tw-bg-opacity));
 }
 
+.bg-lightCardBG {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 241 238 / var(--tw-bg-opacity));
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.px-\[2rem\] {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.pt-0 {
-  padding-top: 0px;
+.py-\[3rem\] {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.pb-\[2rem\] {
+  padding-bottom: 2rem;
+}
+
+.pt-\[4rem\] {
+  padding-top: 4rem;
+}
+
+.pt-\[3rem\] {
+  padding-top: 3rem;
 }
 
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
+}
+
+.text-\[1\.9rem\] {
+  font-size: 1.9rem;
 }
 
 .text-\[2rem\] {
@@ -623,6 +660,16 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -630,7 +677,6 @@ video {
   font-family: 'Poppins', sans-serif;
   list-style: none;
   text-decoration: none;
-  overflow-x: hidden;
 }
 
 header ul li {
@@ -643,34 +689,90 @@ header ul li:hover {
   color: #D9042B;
 }
 
-/* .menu-hidden {
-  display: none;
-} */
+.is-active {
+  transform: translateY(0);
+  border-radius: 0 0 30px 30px;
+}
 
-.menu-active {
+.button-is-active {
   display: block;
 }
 
+.button-isnot-active {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:ml-0 {
     margin-left: 0px;
+  }
+
+  .md\:ml-auto {
+    margin-left: auto;
   }
 
   .md\:mr-0 {
     margin-right: 0px;
   }
 
-  .md\:flex {
-    display: flex;
+  .md\:mr-\[2\.75rem\] {
+    margin-right: 2.75rem;
   }
 
   .md\:hidden {
     display: none;
   }
 
+  .md\:translate-y-0 {
+    --tw-translate-y: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:gap-\[2\.75rem\] {
+    gap: 2.75rem;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
+  }
+
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .md\:shadow-none {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
@@ -687,10 +789,25 @@ header ul li:hover {
     padding-left: 10rem;
     padding-right: 10rem;
   }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .xl\:h-20 {
     height: 5rem;
   }
+
+  .xl\:h-40 {
+    height: 10rem;
+  }
+
+  .xl\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
+

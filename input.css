@@ -9,7 +9,6 @@
   font-family: 'Poppins', sans-serif;
   list-style: none;
   text-decoration: none;
-  overflow-x: hidden;
 }
 
 header ul li {
@@ -22,11 +21,16 @@ header ul li:hover {
   color: #D9042B;
 }
 
-/* .menu-hidden {
-  display: none;
-} */
-
-.menu-active {
-  display: block;
-
+.is-active {
+  transform: translateY(0);
+  border-radius: 0 0 30px 30px;
 }
+
+.button-is-active {
+  display: block;
+}
+
+.button-isnot-active {
+  display: none;
+}
+
