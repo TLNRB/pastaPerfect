@@ -11,3 +11,22 @@
   text-decoration: none;
   overflow-x: hidden;
 }
+
+header ul li {
+  cursor: pointer;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+header ul li:hover {
+  color: #D9042B;
+}
+
+/* .menu-hidden {
+  display: none;
+} */
+
+.menu-active {
+  display: block;
+
+}

@@ -513,20 +513,52 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .ml-auto {
   margin-left: auto;
 }
 
-.mr-\[3\.125rem\] {
-  margin-right: 3.125rem;
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mr-\[2\.75rem\] {
+  margin-right: 2.75rem;
 }
 
 .flex {
   display: flex;
 }
 
-.h-20 {
-  height: 5rem;
+.h-16 {
+  height: 4rem;
+}
+
+.h-\[200vh\] {
+  height: 200vh;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-\[100\\\%\] {
+  width: 100\%;
 }
 
 .cursor-pointer {
@@ -541,8 +573,8 @@ video {
   justify-content: space-between;
 }
 
-.gap-\[3\.125rem\] {
-  gap: 3.125rem;
+.gap-\[2\.75rem\] {
+  gap: 2.75rem;
 }
 
 .bg-darkCardBG {
@@ -550,13 +582,25 @@ video {
   background-color: rgb(236 229 219 / var(--tw-bg-opacity));
 }
 
-.px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
-.text-\[24px\] {
-  font-size: 24px;
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
+.text-\[1\.5rem\] {
+  font-size: 1.5rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
 }
 
 .text-base {
@@ -587,4 +631,66 @@ video {
   list-style: none;
   text-decoration: none;
   overflow-x: hidden;
+}
+
+header ul li {
+  cursor: pointer;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+header ul li:hover {
+  color: #D9042B;
+}
+
+/* .menu-hidden {
+  display: none;
+} */
+
+.menu-active {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .md\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .lg\:mr-\[3\.125rem\] {
+    margin-right: 3.125rem;
+  }
+
+  .lg\:gap-\[3\.125rem\] {
+    gap: 3.125rem;
+  }
+
+  .lg\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .xl\:h-20 {
+    height: 5rem;
+  }
 }
