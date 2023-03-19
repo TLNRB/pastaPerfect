@@ -11,14 +11,19 @@
   text-decoration: none;
 }
 
-header ul li {
-  cursor: pointer;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
+.active-link {
+  position: relative;
 }
 
-header ul li:hover {
-  color: #D9042B;
+.active-link::before {
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  left: 45%;
+  width: 5px;
+  height: 5px;
+  background-color: #353535;
+  border-radius: 50%;
 }
 
 .is-active {
