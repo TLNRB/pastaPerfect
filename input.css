@@ -39,3 +39,8 @@
   display: none;
 }
 
+.img-shadow {
+  filter: drop-shadow(1px 2px 5px #A6907C);
+}
+
+
