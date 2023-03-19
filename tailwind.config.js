@@ -8,6 +8,11 @@ module.exports = {
       lg: '992px',
       xl: '1200px'
     },
+    fontFamily: {
+      'sans-serif': 'Poppins',
+      'serif': 'Italiana',
+      'cursive': 'Italianno'
+    },
     extend: {
       colors: {
         lightText: '#F4F4F4',

@@ -525,12 +525,32 @@ video {
   left: 0px;
 }
 
+.left-\[-5rem\] {
+  left: -5rem;
+}
+
 .right-0 {
   right: 0px;
 }
 
+.right-\[16\.25rem\] {
+  right: 16.25rem;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-\[13\.5rem\] {
+  top: 13.5rem;
+}
+
+.top-\[2\.5rem\] {
+  top: 2.5rem;
+}
+
+.top-\[-10px\] {
+  top: -10px;
 }
 
 .z-10 {
@@ -545,6 +565,10 @@ video {
   margin-right: 0.75rem;
 }
 
+.mt-\[-10px\] {
+  margin-top: -10px;
+}
+
 .flex {
   display: flex;
 }
@@ -557,12 +581,29 @@ video {
   height: 4rem;
 }
 
+.h-\[26\.75rem\] {
+  height: 26.75rem;
+}
+
+.h-\[56\.75rem\] {
+  height: 56.75rem;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
 
+.w-\[32\.75rem\] {
+  width: 32.75rem;
+}
+
 .translate-y-\[-200\%\] {
   --tw-translate-y: -200%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[37deg\] {
+  --tw-rotate: 37deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -580,10 +621,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-5 {
@@ -614,8 +651,28 @@ video {
   padding-bottom: 2rem;
 }
 
+.pt-\[14rem\] {
+  padding-top: 14rem;
+}
+
 .pt-\[3rem\] {
   padding-top: 3rem;
+}
+
+.pt-\[4rem\] {
+  padding-top: 4rem;
+}
+
+.pt-\[-10px\] {
+  padding-top: -10px;
+}
+
+.font-cursive {
+  font-family: Italianno;
+}
+
+.font-sans-serif {
+  font-family: Poppins;
 }
 
 .text-\[1\.5rem\] {
@@ -626,8 +683,16 @@ video {
   font-size: 1.9rem;
 }
 
+.text-\[2\.25rem\] {
+  font-size: 2.25rem;
+}
+
 .text-\[2rem\] {
   font-size: 2rem;
+}
+
+.text-\[6\.25rem\] {
+  font-size: 6.25rem;
 }
 
 .text-base {
@@ -642,6 +707,11 @@ video {
 .text-darkText {
   --tw-text-opacity: 1;
   color: rgb(53 53 53 / var(--tw-text-opacity));
+}
+
+.text-lightRedText {
+  --tw-text-opacity: 1;
+  color: rgb(217 4 43 / var(--tw-text-opacity));
 }
 
 .shadow-md {
@@ -789,6 +859,15 @@ video {
   .xl\:px-40 {
     padding-left: 10rem;
     padding-right: 10rem;
+  }
+
+  .xl\:px-\[16\.25rem\] {
+    padding-left: 16.25rem;
+    padding-right: 16.25rem;
+  }
+
+  .xl\:pt-\[5rem\] {
+    padding-top: 5rem;
   }
 }
 

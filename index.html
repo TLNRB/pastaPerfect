@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Pasta</title>
 </head>
-<body class="bg-darkCardBG">
-  <!-- Header/Nav bar -->
-  <header class="fixed top-0 w-[100%] shadow-md h-16 bg-darkCardBG flex justify-between items-center px-5 text-base text-darkText font-semibold sm:px-10 md:px-20 xl:px-40 xl:h-20">
+<body class="bg-darkCardBG font-sans-serif">
+  <!----- Header/Nav bar ----->
+  <header class="z-10 fixed top-0 w-[100%] shadow-md h-16 bg-darkCardBG flex justify-between items-center px-5 text-base text-darkText font-semibold sm:px-10 md:px-20 xl:px-40 xl:h-20">
     <div>Logo</div>
     <ul id="nav" class="flex flex-col items-center gap-5 bg-lightCardBG translate-y-[-200%] absolute top-0 right-0 left-0 pt-[3rem] px-[2rem] pb-[2rem] shadow-md transition-all duration-400 ease-in-out md:flex-row md:justify-between md:gap-[2.75rem] md:bg-transparent md:shadow-none md:relative md:p-0 md:mr-[2.75rem] md:ml-auto md:translate-y-0 lg:mr-[3.125rem] lg:gap-[3.125rem]" >
       <li>
@@ -38,8 +38,21 @@
     <i id="close-button" class='bx bx-x-circle text-[1.9rem] hidden z-10 cursor-pointer md:hidden' ></i>
   </header>
 
-  <section>
-    <h1>Hello</h1>
+  <!----- Home Section ----->
+  <section class="pt-[4rem] xl:px-[16.25rem] xl:pt-[5rem]">
+    <img class="absolute h-[26.75rem] top-[13.5rem] left-[-5rem] rotate-[37deg]" src="./images/sidePasta.png" alt="">
+    <div class="pt-[14rem] w-[32.75rem]">
+      <h1 class="font-cursive text-[6.25rem] text-darkText">Pasta Recepies</h1>
+      <h2 class="text-[2rem] text-lightRedText pt-[-10px]">For true pasta lovers</h2>
+      <p>
+        Lorem  simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+      </p>
+      <button>
+        Explore
+        <i class='bx bx-right-arrow-alt' ></i>
+      </button>
+    </div>
+    <img class="absolute h-[56.75rem] top-[2.5rem] right-[16.25rem]" src="./images/hero.png" alt="Pasta illustration with ingridients">
   </section>
 
 
