@@ -723,12 +723,12 @@ video {
   gap: 6rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-\[20px\] {
   border-radius: 20px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-darkCardBG {
