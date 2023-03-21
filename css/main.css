@@ -521,6 +521,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .bottom-\[2\.5rem\] {
   bottom: 2.5rem;
 }
@@ -555,6 +559,42 @@ video {
 
 .top-\[7\.5rem\] {
   top: 7.5rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.bottom-\[-\.5rem\] {
+  bottom: -.5rem;
+}
+
+.bottom-\[-1rem\] {
+  bottom: -1rem;
+}
+
+.bottom-\[-1\.5rem\] {
+  bottom: -1.5rem;
+}
+
+.right-\[-1rem\] {
+  right: -1rem;
+}
+
+.right-\[-2rem\] {
+  right: -2rem;
+}
+
+.right-\[-\.5rem\] {
+  right: -.5rem;
+}
+
+.right-\[-1\.5rem\] {
+  right: -1.5rem;
+}
+
+.right-\[-1\.75rem\] {
+  right: -1.75rem;
 }
 
 .z-10 {
@@ -599,6 +639,14 @@ video {
   margin-top: 3.125rem;
 }
 
+.mt-\[-\.75rem\] {
+  margin-top: -.75rem;
+}
+
+.mt-\[-\.5rem\] {
+  margin-top: -.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -633,6 +681,10 @@ video {
 
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-\[41px\] {
+  width: 41px;
 }
 
 .translate-y-\[-\.25rem\] {
@@ -767,6 +819,14 @@ video {
   font-family: Italiana;
 }
 
+.font-cursive {
+  font-family: Italianno;
+}
+
+.font-\[semibold\] {
+  font-family: semibold;
+}
+
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
 }
@@ -788,12 +848,36 @@ video {
   line-height: 1.5rem;
 }
 
+.text-\[2\.125rem\] {
+  font-size: 2.125rem;
+}
+
+.text-\[2\.25rem\] {
+  font-size: 2.25rem;
+}
+
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
+}
+
 .font-\[500\] {
   font-weight: 500;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-\[600\] {
+  font-weight: 600;
+}
+
+.font-\[400\] {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .uppercase {
