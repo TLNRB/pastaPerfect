@@ -153,7 +153,7 @@ const recepies = [
     id: 5,
     title: "Carbonara",
     fullName: "Spaghetti alla Carbonara",
-    smallDescription: "Carbonara is one of the most famous Roman dishes, made with pasta, guanciale, eggs, Pecorino Romano, and black pepper.",
+    smallDescription: "Carbonara is one of the most famous Roman dishes, which conqured the world.",
     description: "This authentic recipe is made with just 5 simple ingredients; pasta, guanciale, eggs, Pecorino Romano, and black pepper. Our recipe will guide you through the do's and don'ts to make a Carbonara just as they do in Rome.",
     pastaType: "./images/types/spaghetti.svg",
     pastaTypeName: "Spaghetti",
