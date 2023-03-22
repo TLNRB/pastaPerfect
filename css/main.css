@@ -557,8 +557,8 @@ video {
   right: 0px;
 }
 
-.right-\[-10rem\] {
-  right: -10rem;
+.right-\[-12rem\] {
+  right: -12rem;
 }
 
 .right-\[-1rem\] {
@@ -787,6 +787,14 @@ video {
   gap: 6rem;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-\[20px\] {
   border-radius: 20px;
 }
@@ -975,7 +983,7 @@ video {
   max-width: 100%;
 }
 
-html {
+body {
   overflow-x: hidden;
 }
 
@@ -1310,8 +1318,8 @@ html {
     left: -5rem;
   }
 
-  .xxl\:right-\[-10rem\] {
-    right: -10rem;
+  .xxl\:right-\[-12rem\] {
+    right: -12rem;
   }
 
   .xxl\:right-\[7\.5rem\] {
