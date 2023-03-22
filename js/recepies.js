@@ -26,7 +26,8 @@ const recepies = [
         "Buon Appetito!"
     ],
     picture: "./images/dishes/tomato.svg",
-    serving: 4
+    serving: 4,
+    uploaded: "16.1.2023"
   },
   //==========Pasta Alla Boscaiola==========
   {
@@ -59,7 +60,8 @@ const recepies = [
         "Buon Appetito!"
     ],
     picture: "./images/dishes/PASTA ALLA BOSCAIOLA.svg",
-    serving: 4
+    serving: 4,
+    uploaded: "5.3.2023"
   },
   //==========Ravioli==========
   {
@@ -101,7 +103,8 @@ const recepies = [
         "Buon Appetito!"
     ],
     picture: "./images/dishes/ravioli.svg",
-    serving: 4
+    serving: 4,
+    uploaded: "21.2.2023"
   },
   //==========Lasagna==========
   {
@@ -146,7 +149,8 @@ const recepies = [
         "Buon Appetito!"
     ],
     picture: "./images/dishes/lasagna.svg",
-    serving: 12
+    serving: 12,
+    uploaded: "20.3.2023"
   },
   //==========Carbonara==========
   {
@@ -174,7 +178,8 @@ const recepies = [
         "Buon Appetito!"
     ],
     picture: "./images/dishes/carbonara.svg",
-    serving: 4
+    serving: 4,
+    uploaded: "28.12.2022"
   },
    //==========Spaghetti Bolognese==========
    {
@@ -211,7 +216,8 @@ const recepies = [
         "Buon Appetito!"
     ],
     picture: "./images/dishes/spaghetti.svg",
-    serving: 8
+    serving: 8,
+    uploaded: "6.1.2023"
   },
   //==========Carbonara==========
   {
@@ -245,6 +251,7 @@ const recepies = [
         "Buon Appetito!"
     ],
     picture: "./images/dishes/alleVongole.svg",
-    serving: 4
+    serving: 4,
+    uploaded: "10.2.2023"
   }
 ]
