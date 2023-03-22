@@ -787,14 +787,6 @@ video {
   gap: 6rem;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
-}
-
 .rounded-\[20px\] {
   border-radius: 20px;
 }
