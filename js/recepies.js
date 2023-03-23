@@ -184,7 +184,7 @@ const recepies = [
    //==========Spaghetti Bolognese==========
    {
     id: 6,
-    title: "Spaghetti Bolognese",
+    title: "Bolognese",
     fullName: "Spaghetti Bolgnese",
     smallDescription: "One of the best ever, the spaghetti bolognese is a super easy and a true Italian classic.",
     description: "Spaghetti bolognese is just in the name, spaghetti tossed in a sauce made from tomatoes, minced beef, garlic, wine, herbs, and spices. It is a classic Italian dish.",
@@ -215,7 +215,7 @@ const recepies = [
         "Drain your spaghetti and add your pasta to the sauce, stir gently and take off the heat. Top with reserved basil leaves. Serve with freshly grated Parmesan cheese.",
         "Buon Appetito!"
     ],
-    picture: "./images/dishes/spaghetti.svg",
+    picture: "./images/dishes/bolognese.svg",
     serving: 8,
     uploaded: "6.1.2023"
   },
@@ -254,4 +254,6 @@ const recepies = [
     serving: 4,
     uploaded: "10.2.2023"
   }
-]
+];
+
+export default recepies;
