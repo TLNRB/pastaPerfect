@@ -48,14 +48,12 @@ body {
   filter: drop-shadow(1px 6px 8px #A6907C);
 }
 
+.sm-img-shadow {
+  filter: drop-shadow(1px 3px 5px #A6907C);
+}
+
 .card-shadow {
   box-shadow: 0px 0px 10px 0px  rgba(166,144,124,0.75);
   -webkit-box-shadow: 0px 0px 10px 0px  rgba(166,144,124,0.75);
   -moz-box-shadow: 0px 0px 10px 0px  rgba(166,144,124,0.75);
 }
-
-.sm-img-shadow {
-  filter: drop-shadow(1px 3px 5px #A6907C);
-}
-
-
