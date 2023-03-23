@@ -219,7 +219,7 @@ const recepies = [
     serving: 8,
     uploaded: "6.1.2023"
   },
-  //==========Carbonara==========
+  //==========Alle Vongole==========
   {
     id: 7,
     title: "Alle Vongole",

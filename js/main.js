@@ -34,10 +34,8 @@ closeButton.addEventListener("click", () => {
 });
 
 
-//========== Popular Section JavaScript ==========
-const cardContainer = document.querySelector("#card-container");
-
-const displayRecepies = () => {
+//========== Explore Section JavaScript ==========
+const displayRecepies = (recepies) => {
   if (recepies.length < 1) {
     cardContainer.innerHTML = `<h3 class="mx-auto">No recepies found</h3>`;
     return;
@@ -58,11 +56,18 @@ const displayRecepies = () => {
   }).join("");
 };
 
-displayRecepies();
 
+//========== Popular Section JavaScript ==========
+const cardContainer = document.querySelector("#card-container");
+
+const popularRecepies = recepies.filter((recepie) => {
+  if (recepie.title.toLowerCase() === "bolognese" ||
+      recepie.title.toLowerCase() === "lasagne" ||
+      recepie.title.toLowerCase() === "carbonara") {
+        return recepie;
+  }
+});
+displayRecepies(popularRecepies);
 
 //========== Recently Section JavaScript ==========
 
-
-
-//========== Explore Section JavaScript ==========
