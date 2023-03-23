@@ -46,7 +46,7 @@ const displayRecepies = () => {
   cardContainer.innerHTML = recepies.map((recepie) => {
     const {id, title, fullName, smallDescription, picture} = recepie;
     return `
-    <div recepie-id="${id}" class="relative card-shadow w-[14rem] h-[20rem] p-[1rem] bg-normalCardBG rounded-[20px] text-center sm:p-[1.5rem] sm:w-[18.75rem]">
+    <div data-id="${id}" class="relative card-shadow w-[14rem] h-[20rem] p-[1rem] bg-normalCardBG rounded-[20px] text-center sm:p-[1.5rem] sm:w-[18.75rem]">
       <img class="sm-img-shadow absolute top-[-3.75rem] left-0  h-[10rem]  sm:h-[11.25rem]" src="${picture}" alt="${fullName}">
       <h3 class="mt-[5.25rem] text-[1.25rem] font-bold pt-[1.25rem] pb-[1.25rem] sm:mt-[6rem]">${title}</h3>
       <p class="text-base">${smallDescription}</p>
