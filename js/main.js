@@ -70,4 +70,15 @@ const popularRecepies = recepies.filter((recepie) => {
 displayRecepies(popularRecepies);
 
 //========== Recently Section JavaScript ==========
+function dateStringToNumber(dateString) {
+  // Split the date string into year, month, and day
+  const [day, month, year] = dateString.split(".");
 
+  // Convert the year, month, and day to numbers
+  const yearNumber = Number(year);
+  const monthNumber = Number(month);
+  const dayNumber = Number(day);
+  const number = yearNumber*1000 + monthNumber*100 + dayNumber;
+
+  return number;
+}

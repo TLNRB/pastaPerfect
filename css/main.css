@@ -876,6 +876,10 @@ video {
   padding-bottom: 3rem;
 }
 
+.pb-\[5\.75rem\] {
+  padding-bottom: 5.75rem;
+}
+
 .pt-\[1\.25rem\] {
   padding-top: 1.25rem;
 }
@@ -886,26 +890,6 @@ video {
 
 .pt-\[4rem\] {
   padding-top: 4rem;
-}
-
-.pb-\[4rem\] {
-  padding-bottom: 4rem;
-}
-
-.pb-\[5rem\] {
-  padding-bottom: 5rem;
-}
-
-.pb-\[6rem\] {
-  padding-bottom: 6rem;
-}
-
-.pb-\[5\.5rem\] {
-  padding-bottom: 5.5rem;
-}
-
-.pb-\[5\.75rem\] {
-  padding-bottom: 5.75rem;
 }
 
 .text-center {
