@@ -627,6 +627,11 @@ video {
   margin-bottom: 4rem;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mb-\[3rem\] {
   margin-bottom: 3rem;
 }
@@ -1334,12 +1339,28 @@ body {
     flex-direction: row;
   }
 
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
+  }
+
   .lg\:gap-\[3\.125rem\] {
     gap: 3.125rem;
   }
 
   .lg\:gap-\[6rem\] {
     gap: 6rem;
+  }
+
+  .lg\:gap-\[10rem\] {
+    gap: 10rem;
+  }
+
+  .lg\:gap-\[5rem\] {
+    gap: 5rem;
   }
 
   .lg\:px-20 {
@@ -1403,6 +1424,14 @@ body {
 
   .xl\:w-\[90\%\] {
     width: 90%;
+  }
+
+  .xl\:gap-\[10rem\] {
+    gap: 10rem;
+  }
+
+  .xl\:gap-\[10\.5rem\] {
+    gap: 10.5rem;
   }
 
   .xl\:px-\[6\.25rem\] {

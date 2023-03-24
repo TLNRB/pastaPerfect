@@ -90,10 +90,14 @@ function dateStringToNumber(dateString) {
 function newestRecepie() {
   let index = 0;
   for (let i = 1; i < recepies.length; i++) {
-    if (recepies[i].uploaded > recepies[index].uploaded) {
+    if (
+      dateStringToNumber(recepies[i].uploaded) >
+      dateStringToNumber(recepies[index].uploaded)
+    ) {
       index = i;
     }
   }
+
   return `
   <img
     class="h-[15rem] sm:h-[20rem] xl:h-[25rem]"
@@ -105,7 +109,7 @@ function newestRecepie() {
       ${recepies[index].fullName}
     </h1>
     <p
-      class="mx-auto mt-[1rem] w-[90%] sm:text-base text-normalText md:w-[75%] lg:w-[400px] xxl:text-[1.125rem] xxl:w-[520px]"
+      class="mx-auto mt-[1rem] w-[90%] sm:text-base text-normalText md:w-[75%] lg:w-[400px] xl:text-[1.125rem] xl:w-[520px]"
     >
       ${recepies[index].description}
     </p>
