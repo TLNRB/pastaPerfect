@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   list-style: none;
   text-decoration: none;
   max-width: 100%;
@@ -21,9 +21,9 @@ body {
 }
 
 .active-link::before {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: -.5rem;
+  bottom: -0.5rem;
   left: 45%;
   width: 5px;
   height: 5px;
@@ -45,17 +45,15 @@ body {
 }
 
 .img-shadow {
-  filter: drop-shadow(1px 6px 8px #A6907C);
+  filter: drop-shadow(1px 6px 8px #a6907c);
 }
 
 .card-shadow {
-  box-shadow: 0px 0px 10px 0px  rgba(166,144,124,0.75);
-  -webkit-box-shadow: 0px 0px 10px 0px  rgba(166,144,124,0.75);
-  -moz-box-shadow: 0px 0px 10px 0px  rgba(166,144,124,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(166, 144, 124, 0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(166, 144, 124, 0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(166, 144, 124, 0.75);
 }
 
 .sm-img-shadow {
-  filter: drop-shadow(1px 3px 5px #A6907C);
+  filter: drop-shadow(1px 3px 5px #a6907c);
 }
-
-

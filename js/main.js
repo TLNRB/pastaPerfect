@@ -1,4 +1,4 @@
-import recepies from "./recepies.js"
+import recepies from "./recepies.js";
 
 //========== Nav Bar JavaScript ==========
 const nav = document.querySelector("#nav");
@@ -33,7 +33,6 @@ closeButton.addEventListener("click", () => {
   closeButton.classList.remove("button-is-active");
 });
 
-
 //========== Explore Section JavaScript ==========
 const displayRecepies = (recepies) => {
   if (recepies.length < 1) {
@@ -41,9 +40,10 @@ const displayRecepies = (recepies) => {
     return;
   }
 
-  cardContainer.innerHTML = recepies.map((recepie) => {
-    const {id, title, fullName, smallDescription, picture} = recepie;
-    return `
+  cardContainer.innerHTML = recepies
+    .map((recepie) => {
+      const { id, title, fullName, smallDescription, picture } = recepie;
+      return `
     <div data-id="${id}" class="relative card-shadow w-[14rem] h-[20rem] p-[1rem] bg-normalCardBG rounded-[20px] text-center sm:p-[1.5rem] sm:w-[18.75rem]">
       <img class="sm-img-shadow absolute top-[-3.75rem] left-0  h-[10rem]  sm:h-[11.25rem]" src="${picture}" alt="${fullName}">
       <h3 class="mt-[5.25rem] text-[1.25rem] font-bold pt-[1.25rem] pb-[1.25rem] sm:mt-[6rem]">${title}</h3>
@@ -53,18 +53,20 @@ const displayRecepies = (recepies) => {
       </a>
     </div>
     `;
-  }).join("");
+    })
+    .join("");
 };
-
 
 //========== Popular Section JavaScript ==========
 const cardContainer = document.querySelector("#card-container");
 
 const popularRecepies = recepies.filter((recepie) => {
-  if (recepie.title.toLowerCase() === "bolognese" ||
-      recepie.title.toLowerCase() === "lasagne" ||
-      recepie.title.toLowerCase() === "carbonara") {
-        return recepie;
+  if (
+    recepie.title.toLowerCase() === "bolognese" ||
+    recepie.title.toLowerCase() === "lasagne" ||
+    recepie.title.toLowerCase() === "carbonara"
+  ) {
+    return recepie;
   }
 });
 displayRecepies(popularRecepies);
@@ -78,7 +80,7 @@ function dateStringToNumber(dateString) {
   const yearNumber = Number(year);
   const monthNumber = Number(month);
   const dayNumber = Number(day);
-  const number = yearNumber*1000 + monthNumber*100 + dayNumber;
+  const number = yearNumber * 1000 + monthNumber * 100 + dayNumber;
 
   return number;
 }
