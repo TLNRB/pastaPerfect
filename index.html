@@ -204,7 +204,7 @@
 
     <!-- Recently Section -->
     <section
-      class="flex justify-center items-center relative px-5 sm:px-10 lg:px-20 xl:px-[6.25rem] xxl:px-[7.5rem] xxxl:px-40"
+      class="flex flex-col justify-center items-center relative px-5 sm:px-10 lg:px-20 xl:px-[6.25rem] xxl:px-[7.5rem] xxxl:px-40"
     >
       <!----- Headline ----->
       <div
@@ -226,6 +226,38 @@
             src="./images/leaf3.png"
             alt="Leaf illustration"
           />
+        </div>
+      </div>
+
+      <!----- Content ----->
+      <div
+        id="recently-container"
+        class="flex flex-col justify-center items-center gap-[2.5rem] sm:gap-[4rem] lg:gap-[6rem] mx-auto lg:flex-row"
+      >
+        <img
+          class="h-[15rem] sm:h-[20rem] xl:h-[25rem]"
+          src="./images/dishes/lasagna.png"
+          alt=""
+        />
+        <div class="text-center lg:text-left">
+          <h1 class="text-[1.25rem] uppercase font-bold sm:text-[2rem]">
+            Lasagna Bolognese
+          </h1>
+          <p
+            class="mx-auto mt-[1rem] w-[90%] sm:text-base text-normalText md:w-[75%] lg:w-[400px] xxl:text-[1.125rem] xxl:w-[520px]"
+          >
+            Lorem simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown printer took a galley
+          </p>
+          <button
+            class="flex mx-auto gap-1 items-center mt-[2rem] bg-darkRedBtn text-lightText py-4 px-6 rounded-full cursor-pointer group lg:ml-0 xl:mx-0"
+          >
+            <p class="font-[500]">Full Recepie</p>
+            <i
+              class="bx bx-right-arrow-alt text-[1.5rem] group-hover:translate-x-[6px] transition-all ease-in-out"
+            ></i>
+          </button>
         </div>
       </div>
     </section>
