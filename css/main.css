@@ -637,6 +637,26 @@ video {
   top: 7rem;
 }
 
+.top-\[20rem\] {
+  top: 20rem;
+}
+
+.top-\[18rem\] {
+  top: 18rem;
+}
+
+.top-\[15rem\] {
+  top: 15rem;
+}
+
+.top-\[10rem\] {
+  top: 10rem;
+}
+
+.top-\[12rem\] {
+  top: 12rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -736,6 +756,10 @@ video {
   margin-top: 6.5rem;
 }
 
+.mt-\[10rem\] {
+  margin-top: 10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -794,6 +818,22 @@ video {
 
 .h-\[50rem\] {
   height: 50rem;
+}
+
+.h-\[25rem\] {
+  height: 25rem;
+}
+
+.h-\[23rem\] {
+  height: 23rem;
+}
+
+.h-\[24rem\] {
+  height: 24rem;
+}
+
+.h-\[14rem\] {
+  height: 14rem;
 }
 
 .w-\[100\%\] {
@@ -910,6 +950,11 @@ video {
 
 .rotate-\[37deg\] {
   --tw-rotate: 37deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1624,6 +1669,10 @@ body {
     height: 25rem;
   }
 
+  .lg\:h-\[15rem\] {
+    height: 15rem;
+  }
+
   .lg\:w-\[35px\] {
     width: 35px;
   }
@@ -1702,6 +1751,10 @@ body {
 
   .xl\:mr-0 {
     margin-right: 0px;
+  }
+
+  .xl\:block {
+    display: block;
   }
 
   .xl\:grid {
