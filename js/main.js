@@ -100,7 +100,7 @@ function newestRecepie() {
 
   return `
   <img
-    class="h-[15rem] sm:h-[20rem] xl:h-[25rem]"
+    class="sm-img-shadow h-[15rem] sm:h-[20rem] xl:h-[25rem]"
     src="${recepies[index].picture}"
     alt=""
   />
@@ -114,7 +114,7 @@ function newestRecepie() {
       ${recepies[index].description}
     </p>
     <button
-      class="flex mx-auto gap-1 items-center mt-[2rem] bg-darkRedBtn text-lightText py-4 px-6 rounded-full cursor-pointer group lg:ml-0 xl:mx-0"
+      class="card-shadow flex mx-auto gap-1 items-center mt-[2rem] bg-darkRedBtn text-lightText py-4 px-6 rounded-full cursor-pointer group lg:ml-0 xl:mx-0"
     >
       <p class="font-[500]">Full Recepie</p>
       <i

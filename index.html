@@ -18,14 +18,21 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css" />
-    <title>Pasta</title>
+    <title>Pasta Perfection</title>
   </head>
   <body class="bg-darkCardBG font-sans-serif text-darkText">
     <!----- Header/Nav bar ----->
     <header
       class="z-10 fixed top-0 left-0 right-0 w-[100%] shadow-md h-16 bg-darkCardBG flex justify-between items-center px-5 text-base text-darkText font-semibold md:px-10 lg:px-20 xl:px-[6.25rem] xl:h-20 xxl:px-[7.5rem] xxxl:px-40"
     >
-      <div>Logo</div>
+      <div class="flex items-center gap-[.75rem]">
+        <img
+          class="hidden w-[25px] xs:block"
+          src="images/icons8-spaghetti-50.png"
+          alt="Pasta Logo"
+        />
+        <p class="translate-y-[1px]">Pasta Perfection</p>
+      </div>
       <!----- Menu ----->
       <ul
         id="nav"
@@ -90,7 +97,7 @@
           1500s, when an unknown printer took a galley
         </p>
         <button
-          class="flex mx-auto gap-1 items-center mt-[2.5rem] bg-darkRedBtn text-lightText py-4 px-6 rounded-full cursor-pointer group xl:mx-0"
+          class="card-shadow flex mx-auto gap-1 items-center mt-[2.5rem] bg-darkRedBtn text-lightText py-4 px-6 rounded-full cursor-pointer group xl:mx-0"
         >
           <p class="font-[500]">Explore More</p>
           <i
@@ -236,7 +243,7 @@
       >
         <!-- Newest Recepie Here -->
         <img
-          class="h-[15rem] sm:h-[20rem] xl:h-[25rem]"
+          class="sm-img-shadow h-[15rem] sm:h-[20rem] xl:h-[25rem]"
           src="./images/dishes/lasagna.png"
           alt=""
         />
@@ -252,7 +259,7 @@
             the 1500s, when an unknown printer took a galley
           </p>
           <button
-            class="flex mx-auto gap-1 items-center mt-[2rem] bg-darkRedBtn text-lightText py-4 px-6 rounded-full cursor-pointer group lg:ml-0 xl:mx-0"
+            class="card-shadow flex mx-auto gap-1 items-center mt-[2rem] bg-darkRedBtn text-lightText py-4 px-6 rounded-full cursor-pointer group lg:ml-0 xl:mx-0"
           >
             <p class="font-[500]">Full Recepie</p>
             <i
@@ -268,7 +275,9 @@
       class="flex flex-col justify-center items-center relative px-5 sm:px-10 lg:px-20 xl:px-[6.25rem] xxl:px-[7.5rem] xxxl:px-40"
     >
       <!----- Headline ----->
-      <div class="mt-[8rem] mb-[1.5rem] text-center sm:mb-[4rem] md:mt-[8rem]">
+      <div
+        class="mt-[8rem] mb-[1.5rem] text-center sm:mb-[1.25rem] md:mt-[8rem]"
+      >
         <h2
           class="font-cursive text-[1.75rem] font-semibold text-lightRedText sm:text-[2.5rem]"
         >
@@ -316,6 +325,12 @@
         src="images/types/sideFettucchini2Cut.png"
         alt="Fettucchini Illustration"
       />
+      <!-- Copyright -->
+      <p
+        class="mt-[3.125rem] mb-[.625rem] text-center text-[.875rem] text-normalText"
+      >
+        &copy; 2023 Pasta Perfection. All rights reserved.
+      </p>
     </footer>
 
     <script src="./js/recepies.js" type="module"></script>
