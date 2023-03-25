@@ -272,7 +272,7 @@
 
     <!-- Newsletter Section -->
     <footer
-      class="flex flex-col justify-center items-center relative px-5 sm:px-10 lg:px-20 xl:px-[6.25rem] xxl:px-[7.5rem] xxxl:px-40"
+      class="relative flex flex-col justify-center items-center px-5 sm:px-10 lg:px-20 xl:px-[6.25rem] xxl:px-[7.5rem] xxxl:px-40"
     >
       <!----- Headline ----->
       <div
@@ -285,7 +285,7 @@
         </h2>
       </div>
       <div
-        class="card-shadow grid grid-cols-2 w-[1088px] h-[284px] bg-darkestBrown py-[2rem] px-[6.5rem] rounded-[85px]"
+        class="z-10 card-shadow grid grid-cols-2 w-[1088px] h-[284px] bg-darkestBrown py-[2rem] px-[6.5rem] rounded-[85px]"
       >
         <div class="flex flex-col justify-center my-auto mr-auto">
           <div
@@ -317,11 +317,13 @@
       </div>
       <!-- Left Side Pictures -->
       <img
+        class="opacity-20 hidden absolute h-[31rem] bottom-0 left-0 xxl:block"
         src="images/types/sideSpaghetti1Cut2.png"
         alt="Spaghetti Illustration"
       />
       <!-- Right Side Pictures -->
       <img
+        class="opacity-20 hidden absolute h-[15rem] bottom-0 right-0 xxl:block"
         src="images/types/sideFettucchini2Cut.png"
         alt="Fettucchini Illustration"
       />
