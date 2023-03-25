@@ -243,7 +243,7 @@
       >
         <!-- Newest Recepie Here -->
         <img
-          class="sm-img-shadow h-[15rem] sm:h-[20rem] xl:h-[25rem]"
+          class="sm-img-shadow h-[10rem] sm:h-[20rem] xl:h-[25rem]"
           src="./images/dishes/lasagna.png"
           alt=""
         />
@@ -276,7 +276,7 @@
     >
       <!----- Headline ----->
       <div
-        class="mt-[8rem] mb-[1.5rem] text-center sm:mb-[1.25rem] md:mt-[8rem]"
+        class="mt-[8rem] mb-[.75rem] text-center sm:mb-[1.25rem] md:mt-[8rem]"
       >
         <h2
           class="font-cursive text-[1.75rem] font-semibold text-lightRedText sm:text-[2.5rem]"
@@ -284,33 +284,45 @@
           Newsletter
         </h2>
       </div>
+      <!-- Newsletter Box -->
       <div
-        class="z-10 card-shadow grid grid-cols-2 w-[1088px] h-[284px] bg-darkestBrown py-[2rem] px-[6.5rem] rounded-[85px]"
+        class="z-10 relative card-shadow flex items-center gap-[2rem] w-[1088px] h-[220px] bg-darkestBrown p-[1rem] rounded-[40px] sm:overflow-hidden sm:h-[284px] sm:rounded-[60px] sm:py-[2rem] sm:px-[1rem] md:px-[3rem] lg:rounded-[85px] xl:grid xl:grid-cols-2 xl:px-[5rem] xxl:px-[6.5rem]"
       >
-        <div class="flex flex-col justify-center my-auto mr-auto">
+        <div
+          class="z-[2] flex flex-col justify-center m-auto lg:ml-[1rem] lg:mr-auto xl:ml-0"
+        >
           <div
-            class="text-[1.25rem] uppercase font-bold sm:text-[2rem] text-lightText"
+            class="text-[1.25rem] text-center uppercase font-bold text-lightText sm:text-[2rem] lg:text-left"
           >
             <h1>Subsrcibe For</h1>
-            <h1 class="translate-y-[-.5rem]">The latest updates</h1>
+            <div class="relative w-fit mx-auto lg:ml-0">
+              <h1 class="translate-y-[-.25rem] sm:translate-y-[-.5rem]">
+                The latest updates
+              </h1>
+              <img
+                class="sm-img-shadow-dark hidden absolute w-[22px] rotate-[37deg] right-[-1rem] bottom-[-.5rem] xs:block sm:right-[-1rem] sm:bottom-0 sm:w-[26px] lg:right-[-1.5rem] lg:bottom-[-.5rem] lg:w-[35px]"
+                src="./images/leaf2.png"
+                alt="Leaf illustration"
+              />
+            </div>
           </div>
-          <div class="relative mt-[2rem]">
+          <div class="mt-[1.5rem] sm:mt-[2rem] sm:relative">
             <input
-              class="card-shadow-dark w-[400px] h-[54px] py-[1rem] px-[1.5rem] text-base text-normalText rounded-full"
+              class="card-shadow-dark w-[400px] h-[40px] py-[.75rem] px-[1.25rem] text-[.75rem] text-normalText rounded-full xs:h-[46px] xs:y-[.75rem] xs:px-[1.25rem] xs:text-[.875rem] sm:h-[54px] sm:y-[1rem] sm:px-[1.5rem] sm:text-base"
               type="text"
               placeholder="Enter your email"
             />
             <button
-              class="card-shadow-dark absolute flex justify-center items-center bottom-[3px] right-[3px] w-[3rem] h-[3rem] rounded-full bg-darkBrown cursor-pointer group hover:scale-[1.12] transition-all ease-in-out"
+              class="card-shadow-dark absolute flex justify-center items-center bottom-[-1.25rem] right-[50%] translate-x-[50%] w-[3.5rem] h-[2.5rem] rounded-full bg-darkBrown cursor-pointer group hover:scale-[1.12] transition-all ease-in-out sm:w-[3rem] sm:h-[3rem] sm:bottom-[3px] sm:right-[3px] sm:translate-x-0"
             >
               <i
-                class="bx bxs-paper-plane text-lightText text-[1.5rem] flex justify-center items-center group-hover:scale-110 transition-all ease-in-out"
+                class="bx bxs-paper-plane text-lightText text-[1.25rem] flex justify-center items-center group-hover:scale-110 transition-all ease-in-out sm:text-[1.5rem]"
               ></i>
             </button>
           </div>
         </div>
         <img
-          class="img-shadow-dark my-auto ml-auto w-[345px]"
+          class="img-shadow-dark hidden absolute bottom-[-1.5rem] right-[-6rem] rotate-[-20deg] my-auto ml-auto w-[280px] md:block lg:static lg:rotate-0 lg:mr-[1rem] xl:mr-0 xl:w-[345px]"
           src="images/pasta-cooked.png"
           alt="Pasta Illustration"
         />
@@ -329,7 +341,7 @@
       />
       <!-- Copyright -->
       <p
-        class="mt-[3.125rem] mb-[.625rem] text-center text-[.875rem] text-normalText"
+        class="mt-[3.125rem] mb-[.625rem] text-center text-[.75rem] text-normalText sm:text-[.875rem]"
       >
         &copy; 2023 Pasta Perfection. All rights reserved.
       </p>
