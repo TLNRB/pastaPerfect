@@ -880,6 +880,14 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-\[9rem\] {
+  margin-top: 9rem;
+}
+
+.mt-\[6rem\] {
+  margin-top: 6rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1394,6 +1402,10 @@ video {
 
 .pt-\[4rem\] {
   padding-top: 4rem;
+}
+
+.pb-\[1rem\] {
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -1922,6 +1934,14 @@ body {
     margin-top: 8rem;
   }
 
+  .md\:mt-\[11rem\] {
+    margin-top: 11rem;
+  }
+
+  .md\:mt-\[10rem\] {
+    margin-top: 10rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2097,6 +2117,10 @@ body {
 
   .lg\:rounded-\[85px\] {
     border-radius: 85px;
+  }
+
+  .lg\:rounded-\[75px\] {
+    border-radius: 75px;
   }
 
   .lg\:px-20 {
