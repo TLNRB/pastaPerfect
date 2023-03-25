@@ -37,7 +37,7 @@ const recepies = [
     title: "Pasta alla Boscaiola",
     fullName: "Pasta alla Boscaiola",
     smallDescription:
-      "A a super easy pasta recipe made with a rich and creamy sausage and mushroom sauce.",
+      "A super easy pasta recipe made with a rich and creamy sausage and mushroom sauce.",
     description:
       "Pasta alla Boscaiola is a classic Italian pasta dish that translates to pasta with the woodsman's sauce. The rustic flavors of the dish evoke the flavors of a cozy autumn day in the Italian countryside.",
     pastaType: "./images/types/penne.svg",
