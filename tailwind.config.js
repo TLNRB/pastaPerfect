@@ -26,6 +26,7 @@ module.exports = {
         darkCardBG: "#ECE5DB",
         lightRedText: "#D9042B",
         darkRedBtn: "#8C0327",
+        lightBrown: "#E3DBD0",
         darkBrown: "#A6907C",
         darkestBrown: "#5A4B3D",
       },
