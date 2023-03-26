@@ -1428,6 +1428,10 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.slider::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 10px 0 rgba(64, 64, 64, 0.25);
+}
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -1435,8 +1439,16 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-.slider::-webkit-slider-thumb:hover {
-  box-shadow: 0 0 10px 0 rgba(64, 64, 64, 0.25);
+.pasta-dropdown-btn.active .bxs-chevron-down {
+  rotate: 180deg;
+}
+
+.skill-dropdown-btn.active .bxs-chevron-down {
+  rotate: 180deg;
+}
+
+.active {
+  display: flex;
 }
 
 .hover\:scale-110:hover {

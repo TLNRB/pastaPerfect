@@ -45,14 +45,30 @@ form.addEventListener("keyup", () => {
   displayRecepies(filteredRecepies);
 });
 
+// When the user starts typing in the search field, hide the icon
 searchInput.addEventListener("focus", () => {
-  // When the user starts typing in the search field, hide the icon
   icon.style.display = "none";
 });
 
+// When the search field is out of focus, show the icon
 searchInput.addEventListener("blur", () => {
-  // When the search field is out of focus, show the icon
   icon.style.display = "block";
+});
+
+//========== Dropdown BTN Section ==========
+const filterDropdown = document.querySelector(".pasta-dropdown-btn");
+const skillDropdown = document.querySelector(".skill-dropdown-btn");
+const pastaOptions = document.querySelector(".pasta-options");
+const skillLevel = document.querySelector(".skill-level");
+
+filterDropdown.addEventListener("click", () => {
+  filterDropdown.classList.toggle("active");
+  pastaOptions.classList.toggle("active");
+});
+
+skillDropdown.addEventListener("click", () => {
+  skillDropdown.classList.toggle("active");
+  skillLevel.classList.toggle("active");
 });
 
 //========== Slider Filter Section ==========
