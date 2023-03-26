@@ -15,7 +15,7 @@ const popularRecepies = recepies.filter((recepie) => {
 
 const displayRecepies = () => {
   if (popularRecepies.length < 1) {
-    cardContainer.innerHTML = `<h3 class="mx-auto">No recepies found</h3>`;
+    cardContainer.innerHTML = `<h3 class="mx-auto text-[1.25rem] font-semibold">No recepies found</h3>`;
     return;
   }
 

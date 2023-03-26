@@ -3,9 +3,9 @@ import recepies from "./recepies.js";
 //========== Recipe Display Section ==========
 const cardContainer = document.querySelector("#card-container");
 
-const displayRecepies = () => {
+const displayRecepies = (recepies) => {
   if (recepies.length < 1) {
-    cardContainer.innerHTML = `<h3 class="mx-auto">No recepies found</h3>`;
+    cardContainer.innerHTML = `<h3 class="mx-auto text-[1.25rem] font-semibold">No recepies found</h3>`;
     return;
   }
 
@@ -26,7 +26,34 @@ const displayRecepies = () => {
     .join("");
 };
 
-displayRecepies();
+displayRecepies(recepies);
+
+//========== Search Filter Section ==========
+const form = document.querySelector("#input-form");
+const searchInput = document.querySelector("#search-input");
+const icon = document.querySelector(".icon");
+let filteredRecepies = [...recepies];
+
+form.addEventListener("keyup", () => {
+  const inputValue = searchInput.value.toLowerCase();
+
+  filteredRecepies = recepies.filter((recepie) => {
+    if (recepie.title.toLowerCase().includes(inputValue)) {
+      return recepie;
+    }
+  });
+  displayRecepies(filteredRecepies);
+});
+
+searchInput.addEventListener("focus", () => {
+  // When the user starts typing in the search field, hide the icon
+  icon.style.display = "none";
+});
+
+searchInput.addEventListener("blur", () => {
+  // When the search field is out of focus, show the icon
+  icon.style.display = "block";
+});
 
 //========== Slider Filter Section ==========
 const slider = document.querySelector(".slider");
