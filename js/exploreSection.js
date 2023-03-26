@@ -1,6 +1,6 @@
 import recepies from "./recepies.js";
 
-//========== Explore Section JavaScript ==========
+//========== Recipe Display Section ==========
 const cardContainer = document.querySelector("#card-container");
 
 const displayRecepies = () => {
@@ -27,3 +27,22 @@ const displayRecepies = () => {
 };
 
 displayRecepies();
+
+//========== Slider Filter Section ==========
+const slider = document.querySelector(".slider");
+const skill = document.querySelector(".skill");
+
+slider.addEventListener("input", () => {
+  const value = Number(slider.value);
+
+  if (value <= 25) {
+    slider.value = 5;
+    skill.innerHTML = "Easy";
+  } else if (value <= 75) {
+    slider.value = 50;
+    skill.innerHTML = "Intermediate";
+  } else {
+    slider.value = 95;
+    skill.innerHTML = "Hard";
+  }
+});
