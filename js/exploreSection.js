@@ -28,6 +28,17 @@ const displayRecepies = (recepies) => {
 
 displayRecepies(recepies);
 
+//========== Dropdown BTN Section ==========
+const filterDropdown = document.querySelector(".pasta-dropdown-btn");
+const skillDropdown = document.querySelector(".skill-dropdown-btn");
+const pastaOptions = document.querySelector(".pasta-options");
+const skillLevel = document.querySelector(".skill-level");
+
+filterDropdown.addEventListener("click", () => {
+  filterDropdown.classList.toggle("active");
+  pastaOptions.classList.toggle("active");
+});
+
 //========== Search Filter Section ==========
 const form = document.querySelector("#input-form");
 const searchInput = document.querySelector("#search-input");
@@ -55,17 +66,6 @@ searchInput.addEventListener("blur", () => {
   icon.style.display = "block";
 });
 
-//========== Dropdown BTN Section ==========
-const filterDropdown = document.querySelector(".pasta-dropdown-btn");
-const skillDropdown = document.querySelector(".skill-dropdown-btn");
-const pastaOptions = document.querySelector(".pasta-options");
-const skillLevel = document.querySelector(".skill-level");
-
-filterDropdown.addEventListener("click", () => {
-  filterDropdown.classList.toggle("active");
-  pastaOptions.classList.toggle("active");
-});
-
 skillDropdown.addEventListener("click", () => {
   skillDropdown.classList.toggle("active");
   skillLevel.classList.toggle("active");
@@ -88,4 +88,38 @@ slider.addEventListener("input", () => {
     slider.value = 95;
     skill.innerHTML = "Hard";
   }
+});
+
+//========== Filter and Display Section ==========
+const spaghetti = document.querySelector("#spaghetti");
+const lasagna = document.querySelector("#lasagna");
+const fettuccine = document.querySelector("#fettuccine");
+const ravioli = document.querySelector("#ravioli");
+let pasta = [];
+
+function checkFilters(value) {
+  // Check if value is in array
+  if (pasta.includes(value)) {
+    // If value is in array, remove it
+    pasta = pasta.filter((item) => item !== value);
+  } else {
+    // If value is not in array, add it
+    pasta.push(value);
+  }
+
+  // Log the current state of the array
+  console.log(pasta);
+}
+
+spaghetti.addEventListener("click", () => {
+  checkFilters("Spaghetti");
+});
+lasagna.addEventListener("click", () => {
+  checkFilters("Lasagna");
+});
+fettuccine.addEventListener("click", () => {
+  checkFilters("Fettuccine");
+});
+ravioli.addEventListener("click", () => {
+  checkFilters("Ravioli");
 });
