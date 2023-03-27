@@ -1462,7 +1462,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: rgb(227 219 208 / var(--tw-bg-opacity));
 }
 
-.dark .bg-active {
+.dark .bg-active-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(90 75 61 / var(--tw-bg-opacity));
 }

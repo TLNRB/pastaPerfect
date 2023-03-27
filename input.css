@@ -118,5 +118,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .bg-active {
   @apply bg-lightBrown;
+}
+
+.bg-active-dark {
   @apply dark:bg-dmDarkBrown;
 }

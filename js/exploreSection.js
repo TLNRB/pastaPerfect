@@ -108,15 +108,20 @@ function checkFilters(value, id) {
   if (pastaFilter.includes(value)) {
     // If value is in array, remove it
     pastaFilter = pastaFilter.filter((item) => item !== value);
-    id.classList.remove("bg-active");
+    if (document.documentElement.classList.contains("dark")) {
+      id.style.backgroundColor = "#404040";
+    } else {
+      id.classList.remove("bg-active");
+    }
   } else {
     // If value is not in array, add it
     pastaFilter.push(value);
-    id.classList.add("bg-active");
+    if (document.documentElement.classList.contains("dark")) {
+      id.style.backgroundColor = "#5A4B3D";
+    } else {
+      id.classList.add("bg-active");
+    }
   }
-
-  console.log(pastaFilter);
-  console.log(skillFilter);
 }
 
 spaghetti.addEventListener("click", () => {
