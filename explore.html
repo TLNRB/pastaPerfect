@@ -93,7 +93,9 @@
       class="flex flex-col justify-center items-center relative pb-[2rem] px-5 sm:px-10 lg:px-20 xl:px-[6.25rem] xxl:px-[7.5rem] xxxl:px-40"
     >
       <!----- Headline ----->
-      <div class="mt-[10rem] mb-[3rem] text-center sm:mb-[4rem] lg:mb-[5rem]">
+      <div
+        class="mt-[8rem] mb-[3rem] text-center sm:mb-[4rem] md:mt-[10rem] lg:mb-[5rem]"
+      >
         <h2
           class="font-cursive text-[1.75rem] font-semibold text-lightRedText sm:text-[2.5rem]"
         >
@@ -113,13 +115,16 @@
         </div>
       </div>
       <!-- Container -->
-      <div class="grid grid-cols-12">
+      <div class="flex flex-col justify-between gap-[2.5rem] md:flex-row">
         <!-- Filter Container -->
         <div
-          class="col-start-1 col-end-4 z-[6] mt-[3rem] flex flex-col gap-[1.5rem]"
+          class="w-[220px] z-[6] flex flex-col gap-[1.5rem] mx-auto mb-[2rem] md:mt-[3rem] md:mb-0"
         >
           <!-- Search -->
-          <form id="input-form" class="relative w-[200px] h-[46p] group">
+          <form
+            id="input-form"
+            class="relative w-[200px] h-[46p] group mx-auto md:mx-0"
+          >
             <input
               id="search-input"
               class="card-shadow w-[200px] h-[46px] bg-lightCardBG rounded-[15px] p-[.875rem] text-[.875rem] cursor-pointer"
@@ -134,7 +139,7 @@
           <!-- Pasta Type -->
           <div>
             <div
-              class="pasta-dropdown-btn card-shadow w-[200px] h-[46px] flex items-center justify-between bg-lightCardBG rounded-[15px] p-[.875rem] cursor-pointer"
+              class="pasta-dropdown-btn card-shadow w-[200px] h-[46px] flex items-center justify-between bg-lightCardBG rounded-[15px] mx-auto md:mx-0 p-[.875rem] cursor-pointer"
             >
               <h2 class="text-[1rem] font-bold">Pasta Type</h2>
               <!-- Icon -->
@@ -143,7 +148,7 @@
               ></i>
             </div>
             <div
-              class="pasta-options card-shadow w-[200px] h-[200px] flex-wrap items-center justify-between bg-lightCardBG rounded-[15px] mt-[.5rem] p-[.875rem] hidden"
+              class="pasta-options card-shadow w-[200px] h-[200px] flex-wrap items-center justify-between bg-lightCardBG rounded-[15px] mx-auto md:mx-0 mt-[.5rem] p-[.875rem] hidden"
             >
               <button
                 id="spaghetti"
@@ -183,7 +188,7 @@
           <!-- Skill Level -->
           <div>
             <div
-              class="skill-dropdown-btn card-shadow w-[200px] h-[46px] flex items-center justify-between bg-lightCardBG rounded-[15px] p-[.875rem] cursor-pointer"
+              class="skill-dropdown-btn card-shadow w-[200px] h-[46px] flex items-center justify-between bg-lightCardBG rounded-[15px] mx-auto md:mx-0 p-[.875rem] cursor-pointer"
             >
               <h2 class="text-[1rem] font-bold">Skill Level</h2>
               <!-- Icon -->
@@ -192,7 +197,7 @@
               ></i>
             </div>
             <div
-              class="skill-level card-shadow w-[200px] h-[86px] flex-col items-center justify-between bg-lightCardBG rounded-[15px] mt-[.5rem] p-[.875rem] hidden"
+              class="skill-level card-shadow w-[200px] h-[86px] flex-col items-center justify-between bg-lightCardBG rounded-[15px] mx-auto md:mx-0 mt-[.5rem] p-[.875rem] hidden"
             >
               <input
                 class="slider mt-[.75rem]"
@@ -209,7 +214,7 @@
           <!-- Filter Button -->
           <button
             id="filterButton"
-            class="card-shadow w-[72px] h-[36px] flex items-center justify-center ml-[64px] bg-darkBrown rounded-[15px] p-[.875rem] cursor-pointer group hover:scale-110 transition-all ease-in-out"
+            class="card-shadow w-[72px] h-[36px] flex items-center justify-center mx-auto md:mr-0 md:ml-[64px] bg-darkBrown rounded-[15px] p-[.875rem] cursor-pointer group hover:scale-110 transition-all ease-in-out"
           >
             <h2
               class="text-[.875rem] tracking-wider font-semibold text-lightText"
@@ -222,7 +227,7 @@
         <!----- Card Container ----->
         <div
           id="card-container"
-          class="col-start-4 col-end-13 flex flex-wrap justify-center items-center gap-[6rem] mt-[3rem]"
+          class="flex flex-wrap justify-center items-center gap-[6rem] mt-[3rem]"
         >
           <!----- Cards ----->
           <div
@@ -257,7 +262,7 @@
       <!-- Left Side Pictures -->
       <!-- <img class="hidden absolute h-[10rem] top-[1rem] left-[-3rem] rotate-[-75deg] md:block md:left-[-8rem] md:h-[14rem]" src="./images/sidePastaFettuchini.png" alt="Lasagna pasta illustration"> -->
       <img
-        class="opacity-20 hidden absolute h-[14rem] top-[12rem] left-0 rotate-180 md:block"
+        class="opacity-20 hidden absolute h-[14rem] top-[8rem] left-0 rotate-180 md:block"
         src="./images/types/sideFettucchini2Cut.png"
         alt="Fettuchini pasta illustration"
       />
@@ -265,7 +270,7 @@
       <!-- Right Side Pictures -->
       <!-- <img class="hidden absolute h-[16rem] top-[40rem] right-[-12rem] rotate-[-136deg] xxxl:block xxl:right-[-12rem]" src="./images/lasagna.png" alt="Lasagna pasta illustration"> -->
       <img
-        class="opacity-20 hidden absolute h-[24rem] bottom-0 right-0 xxl:block"
+        class="opacity-20 hidden absolute h-[24rem] z-[-1] bottom-0 right-0 lg:block"
         src="./images/types/sideSpaghetti2Cut2.png"
         alt="Lasagna pasta illustration"
       />
