@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html"],
+  darkMode: "class",
   theme: {
     screens: {
       xs: "360px",
@@ -29,6 +30,17 @@ module.exports = {
         lightBrown: "#E3DBD0",
         darkBrown: "#A6907C",
         darkestBrown: "#5A4B3D",
+
+        dmLightText: "#F4F4F4",
+        dmNormalText: "#A2A2A2",
+        dmLightCardBG: "#353535",
+        dmNormalCardBG: "#282828",
+        dmDarkCardBG: "#252525",
+        dmLightRedText: "#D9042B",
+        dmDrkRedBtn: "#8C0327",
+        dmDarkBrown: "#5A4B3D",
+        dmDarkestBrown: "#302A26",
+        dmRealyDarkBrown: "#272421",
       },
     },
   },

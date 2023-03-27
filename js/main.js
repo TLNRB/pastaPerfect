@@ -1,23 +1,52 @@
-import recepies from "./recepies.js";
-
 //========== Nav Bar JavaScript ==========
 const nav = document.querySelector("#nav");
-const darkMode = document.querySelector("#dark-mode");
-const lightMode = document.querySelector("#light-mode");
+const moon = document.querySelector("#moon");
+const sun = document.querySelector("#sun");
 const hamburger = document.querySelector("#hamburger");
 const closeButton = document.querySelector("#close-button");
+//Theme Vars
+const userTheme = localStorage.getItem("theme");
+const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+//Initial Theme Check
+const themeCheck = () => {
+  if (userTheme === "dark" || (!userTheme && systemTheme)) {
+    document.documentElement.classList.add("dark");
+    sun.classList.add("button-is-active");
+    moon.classList.add("button-isnot-active");
+    return;
+  }
+  sun.classList.remove("button-is-active");
+  moon.classList.remove("button-isnot-active");
+};
+
+//Manual Theme Switch
+const themeSwitch = () => {
+  if (document.documentElement.classList.contains("dark")) {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+    sun.classList.remove("button-is-active");
+    moon.classList.remove("button-isnot-active");
+    return;
+  }
+  document.documentElement.classList.add("dark");
+  localStorage.setItem("theme", "dark");
+  sun.classList.add("button-is-active");
+  moon.classList.add("button-isnot-active");
+};
 
 //Light Mode On
-darkMode.addEventListener("click", () => {
-  lightMode.classList.add("button-is-active");
-  darkMode.classList.add("button-isnot-active");
+moon.addEventListener("click", () => {
+  themeSwitch();
 });
 
 //Dark Mode On
-lightMode.addEventListener("click", () => {
-  lightMode.classList.remove("button-is-active");
-  darkMode.classList.remove("button-isnot-active");
+sun.addEventListener("click", () => {
+  themeSwitch();
 });
+
+//Invoke Theme Check on Initial Load
+themeCheck();
 
 //Hamburger Menu Open
 hamburger.addEventListener("click", () => {

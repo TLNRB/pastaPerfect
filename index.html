@@ -22,10 +22,12 @@
     <script src="./js/main.js" type="module"></script>
     <title>Pasta Perfection</title>
   </head>
-  <body class="bg-darkCardBG font-sans-serif text-darkText">
+  <body
+    class="bg-darkCardBG font-sans-serif text-darkText dark:bg-dmDarkCardBG dark:text-dmNormalText"
+  >
     <!----- Header/Nav bar ----->
     <header
-      class="z-10 fixed top-0 left-0 right-0 w-[100%] shadow-md h-16 bg-darkCardBG flex justify-between items-center px-5 text-base text-darkText font-semibold md:px-10 lg:px-20 xl:px-[6.25rem] xl:h-20 xxl:px-[7.5rem] xxxl:px-40"
+      class="z-10 fixed top-0 left-0 right-0 w-[100%] shadow-md h-16 bg-darkCardBG flex justify-between items-center px-5 text-base text-darkText font-semibold md:px-10 lg:px-20 xl:px-[6.25rem] xl:h-20 xxl:px-[7.5rem] xxxl:px-40 dark:bg-dmDarkCardBG dark:text-dmLightText"
     >
       <div>
         <a
@@ -43,41 +45,43 @@
       <!----- Menu ----->
       <ul
         id="nav"
-        class="flex flex-col items-center gap-5 bg-lightCardBG translate-y-[-200%] absolute top-0 right-0 left-0 pt-[3rem] px-[2rem] pb-[2rem] shadow-md transition-all duration-400 ease-in-out md:flex-row md:justify-between md:gap-[2.75rem] md:bg-transparent md:shadow-none md:relative md:p-0 md:mr-[2.75rem] md:ml-auto md:translate-y-0 lg:mr-[3.125rem] lg:gap-[3.125rem]"
+        class="flex flex-col items-center gap-5 bg-lightCardBG translate-y-[-200%] absolute top-0 right-0 left-0 pt-[3rem] px-[2rem] pb-[2rem] shadow-md transition-all duration-400 ease-in-out md:flex-row md:justify-between md:gap-[2.75rem] md:bg-transparent md:shadow-none md:relative md:p-0 md:mr-[2.75rem] md:ml-auto md:translate-y-0 lg:mr-[3.125rem] lg:gap-[3.125rem] dark:bg-dmNormalCardBG md:dark:bg-transparent"
       >
         <li>
           <a
-            class="cursor-pointer hover:text-darkRedBtn active-link"
+            class="cursor-pointer hover:text-darkRedBtn active-link dark:hover:text-dmNormalText"
             href="index.html"
             >Home</a
           >
         </li>
         <li>
           <a
-            class="cursor-pointer hover:text-darkRedBtn"
+            class="cursor-pointer hover:text-darkRedBtn dark:hover:text-dmNormalText"
             href="#popular-section"
             >Popular</a
           >
         </li>
         <li>
           <a
-            class="cursor-pointer hover:text-darkRedBtn"
+            class="cursor-pointer hover:text-darkRedBtn dark:hover:text-dmNormalText"
             href="#recently-section"
             >Recently</a
           >
         </li>
         <li>
-          <a class="cursor-pointer hover:text-darkRedBtn" href="explore.html"
+          <a
+            class="cursor-pointer hover:text-darkRedBtn dark:hover:text-dmNormalText"
+            href="explore.html"
             >Explore</a
           >
         </li>
       </ul>
       <i
-        id="dark-mode"
+        id="moon"
         class="bx bx-moon text-[1.5rem] cursor-pointer ml-auto mr-3 md:ml-0 md:mr-0"
       ></i>
       <i
-        id="light-mode"
+        id="sun"
         class="bx bx-sun text-[1.5rem] hidden cursor-pointer ml-auto mr-3 md:ml-0 md:mr-0"
       ></i>
       <i
@@ -99,7 +103,7 @@
         class="mt-[-1rem] pb-[3rem] text-center sm:mt-[-1.5rem] xl:text-left xl:pt-[15.5rem] xl:pb-[11.5rem] xl:w-[35rem]"
       >
         <h1
-          class="font-serif text-[2.75rem] font-semibold text-darkText md:text-[5rem] sm:text-[4rem] xl:text-[5.5rem]"
+          class="font-serif text-[2.75rem] font-semibold text-darkText md:text-[5rem] sm:text-[4rem] xl:text-[5.5rem] dark:text-dmLightText"
         >
           Pasta Recepies
         </h1>
@@ -109,7 +113,7 @@
           For true pasta lovers
         </h2>
         <p
-          class="w-[90%] mx-auto text-base mt-[1rem] text-normalText md:w-[60%] xl:mx-0 xl:w-[90%] xxl:text-[1.125rem] xxl:w-[100%]"
+          class="w-[90%] mx-auto text-base mt-[1rem] text-normalText md:w-[60%] xl:mx-0 xl:w-[90%] xxl:text-[1.125rem] xxl:w-[100%] dark:text-dmNormalText"
         >
           Lorem simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the
@@ -184,7 +188,7 @@
         <!----- Cards ----->
         <div
           data-id=""
-          class="relative card-shadow w-[14rem] h-[20rem] p-[1rem] bg-normalCardBG rounded-[20px] text-center sm:p-[1.5rem] sm:w-[18.75rem]"
+          class="relative card-shadow w-[14rem] h-[20rem] p-[1rem] bg-normalCardBG dark:bg-dmNormalCardBG rounded-[20px] text-center sm:p-[1.5rem] sm:w-[18.75rem]"
         >
           <img
             class="sm-img-shadow absolute top-[-3.75rem] left-[3.75rem] h-[10rem] sm:h-[11.25rem]"
@@ -201,7 +205,7 @@
             true Italian classic.
           </p>
           <a
-            class="card-shadow absolute bottom-[-1rem] right-[-1rem] w-[3rem] h-[3rem] rounded-full bg-darkBrown cursor-pointer group hover:scale-110 transition-all ease-in-out"
+            class="card-shadow absolute bottom-[-1rem] right-[-1rem] w-[3rem] h-[3rem] rounded-full bg-darkBrown cursor-pointer group hover:scale-110 transition-all ease-in-out dark:bg-dmDarkBrown"
             href=""
           >
             <i
@@ -267,11 +271,13 @@
           alt=""
         />
         <div class="text-center lg:text-left">
-          <h1 class="text-[1.25rem] uppercase font-bold sm:text-[2rem]">
+          <h1
+            class="text-[1.25rem] uppercase font-bold sm:text-[2rem] dark:text-dmLightText"
+          >
             Lasagna Bolognese
           </h1>
           <p
-            class="mx-auto mt-[1rem] w-[90%] sm:text-base text-normalText md:w-[75%] lg:w-[400px] xxl:text-[1.125rem] xxl:w-[520px]"
+            class="mx-auto mt-[1rem] w-[90%] sm:text-base text-normalText md:w-[75%] lg:w-[400px] xxl:text-[1.125rem] xxl:w-[520px] dark:text-dmNormalText"
           >
             Lorem simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since
@@ -305,13 +311,13 @@
       </div>
       <!-- Newsletter Box -->
       <div
-        class="z-10 relative card-shadow flex items-center gap-[2rem] w-[1088px] h-[220px] bg-darkestBrown p-[1rem] rounded-[40px] sm:overflow-hidden sm:h-[284px] sm:rounded-[60px] sm:py-[2rem] sm:px-[1rem] md:px-[3rem] lg:rounded-[75px] xl:grid xl:grid-cols-2 xl:px-[5rem] xxl:px-[6.5rem]"
+        class="z-10 relative card-shadow flex items-center gap-[2rem] w-[1088px] h-[220px] bg-darkestBrown p-[1rem] rounded-[40px] sm:overflow-hidden sm:h-[284px] sm:rounded-[60px] sm:py-[2rem] sm:px-[1rem] md:px-[3rem] lg:rounded-[75px] xl:grid xl:grid-cols-2 xl:px-[5rem] xxl:px-[6.5rem] dark:bg-dmDarkestBrown"
       >
         <div
           class="z-[2] flex flex-col justify-center m-auto lg:ml-[1rem] lg:mr-auto xl:ml-0"
         >
           <div
-            class="text-[1.25rem] text-center uppercase font-bold text-lightText sm:text-[2rem] lg:text-left"
+            class="text-[1.25rem] text-center uppercase font-bold text-lightText sm:text-[2rem] lg:text-left dark:text-dmLightText"
           >
             <h1>Subsrcibe For</h1>
             <div class="relative w-fit mx-auto lg:ml-0">
@@ -327,12 +333,12 @@
           </div>
           <div class="mt-[1.5rem] sm:mt-[2rem] sm:relative">
             <input
-              class="card-shadow w-[400px] h-[40px] py-[.75rem] px-[1.25rem] text-[.75rem] text-normalText rounded-full xs:h-[46px] xs:y-[.75rem] xs:px-[1.25rem] xs:text-[.875rem] sm:h-[54px] sm:y-[1rem] sm:px-[1.5rem] sm:text-base"
+              class="card-shadow w-[400px] h-[40px] py-[.75rem] px-[1.25rem] text-[.75rem] text-normalText rounded-full xs:h-[46px] xs:y-[.75rem] xs:px-[1.25rem] xs:text-[.875rem] sm:h-[54px] sm:y-[1rem] sm:px-[1.5rem] sm:text-base dark:text-dmNormalText dark:bg-dmRealyDarkBrown"
               type="text"
               placeholder="Enter your email"
             />
             <button
-              class="card-shadow absolute flex justify-center items-center bottom-[-1.25rem] right-[50%] translate-x-[50%] w-[3.5rem] h-[2.5rem] rounded-full bg-darkBrown cursor-pointer group hover:scale-[1.12] transition-all ease-in-out sm:w-[3rem] sm:h-[3rem] sm:bottom-[3px] sm:right-[3px] sm:translate-x-0"
+              class="card-shadow absolute flex justify-center items-center bottom-[-1.25rem] right-[50%] translate-x-[50%] w-[3.5rem] h-[2.5rem] rounded-full bg-darkBrown cursor-pointer group hover:scale-[1.12] transition-all ease-in-out sm:w-[3rem] sm:h-[3rem] sm:bottom-[3px] sm:right-[3px] sm:translate-x-0 dark:bg-dmDarkBrown"
             >
               <i
                 class="bx bxs-paper-plane text-lightText text-[1.25rem] flex justify-center items-center group-hover:scale-110 transition-all ease-in-out sm:text-[1.5rem]"
