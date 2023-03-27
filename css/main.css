@@ -776,6 +776,10 @@ video {
   margin-top: 8rem;
 }
 
+.ml-\[64px\] {
+  margin-left: 64px;
+}
+
 .flex {
   display: flex;
 }
@@ -876,6 +880,10 @@ video {
   height: 86px;
 }
 
+.h-\[36px\] {
+  height: 36px;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -939,6 +947,22 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[80px\] {
+  width: 80px;
+}
+
+.w-\[72px\] {
+  width: 72px;
 }
 
 .translate-x-\[1\%\] {
@@ -1078,6 +1102,18 @@ video {
   gap: 6rem;
 }
 
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .rounded-\[10px\] {
   border-radius: 10px;
 }
@@ -1096,6 +1132,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-\[1px\] {
+  border-radius: 1px;
 }
 
 .bg-darkBrown {
@@ -1280,6 +1320,14 @@ video {
   text-transform: uppercase;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-darkText {
   --tw-text-opacity: 1;
   color: rgb(53 53 53 / var(--tw-text-opacity));
@@ -1303,6 +1351,11 @@ video {
 .text-normalText {
   --tw-text-opacity: 1;
   color: rgb(96 96 96 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-20 {
@@ -1487,6 +1540,26 @@ input[type="search"]::-webkit-search-results-decoration {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:text-\[2rem\] {
+  font-size: 2rem;
+}
+
+.group:hover .group-hover\:text-\[1rem\] {
+  font-size: 1rem;
+}
+
+.group:hover .group-hover\:text-\[\.9rem\] {
+  font-size: .9rem;
+}
+
+.group:hover .group-hover\:text-\[\.95rem\] {
+  font-size: .95rem;
+}
+
+.group:hover .group-hover\:text-\[15px\] {
+  font-size: 15px;
 }
 
 @media (min-width: 360px) {
