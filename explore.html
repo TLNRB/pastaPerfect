@@ -20,10 +20,12 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Pasta Perfection</title>
   </head>
-  <body class="bg-darkCardBG font-sans-serif text-darkText">
+  <body
+    class="bg-darkCardBG font-sans-serif text-darkText dark:bg-dmDarkCardBG dark:text-dmNormalText"
+  >
     <!----- Header/Nav bar ----->
     <header
-      class="z-10 fixed top-0 left-0 right-0 w-[100%] shadow-md h-16 bg-darkCardBG flex justify-between items-center px-5 text-base text-darkText font-semibold md:px-10 lg:px-20 xl:px-[6.25rem] xl:h-20 xxl:px-[7.5rem] xxxl:px-40"
+      class="z-10 fixed top-0 left-0 right-0 w-[100%] shadow-md h-16 bg-darkCardBG flex justify-between items-center px-5 text-base text-darkText font-semibold md:px-10 lg:px-20 xl:px-[6.25rem] xl:h-20 xxl:px-[7.5rem] xxxl:px-40 dark:bg-dmDarkCardBG dark:text-dmLightText"
     >
       <div>
         <a
@@ -41,31 +43,33 @@
       <!----- Menu ----->
       <ul
         id="nav"
-        class="flex flex-col items-center gap-5 bg-lightCardBG translate-y-[-200%] absolute top-0 right-0 left-0 pt-[3rem] px-[2rem] pb-[2rem] shadow-md transition-all duration-400 ease-in-out md:flex-row md:justify-between md:gap-[2.75rem] md:bg-transparent md:shadow-none md:relative md:p-0 md:mr-[2.75rem] md:ml-auto md:translate-y-0 lg:mr-[3.125rem] lg:gap-[3.125rem]"
+        class="flex flex-col items-center gap-5 bg-lightCardBG translate-y-[-200%] absolute top-0 right-0 left-0 pt-[3rem] px-[2rem] pb-[2rem] shadow-md transition-all duration-400 ease-in-out md:flex-row md:justify-between md:gap-[2.75rem] md:bg-transparent md:shadow-none md:relative md:p-0 md:mr-[2.75rem] md:ml-auto md:translate-y-0 lg:mr-[3.125rem] lg:gap-[3.125rem] dark:bg-dmNormalCardBG md:dark:bg-transparent"
       >
         <li>
           <a
-            class="cursor-pointer hover:text-darkRedBtn active-link"
+            class="cursor-pointer hover:text-darkRedBtn active-link dark:hover:text-dmNormalText"
             href="index.html"
             >Home</a
           >
         </li>
         <li>
           <a
-            class="cursor-pointer hover:text-darkRedBtn"
+            class="cursor-pointer hover:text-darkRedBtn dark:hover:text-dmNormalText"
             href="index.html#popular-section"
             >Popular</a
           >
         </li>
         <li>
           <a
-            class="cursor-pointer hover:text-darkRedBtn"
+            class="cursor-pointer hover:text-darkRedBtn dark:hover:text-dmNormalText"
             href="index.html#recently-section"
             >Recently</a
           >
         </li>
         <li>
-          <a class="cursor-pointer hover:text-darkRedBtn" href="explore.html"
+          <a
+            class="cursor-pointer hover:text-darkRedBtn dark:hover:text-dmNormalText"
+            href="explore.html"
             >Explore</a
           >
         </li>
@@ -128,7 +132,7 @@
           >
             <input
               id="search-input"
-              class="card-shadow w-[200px] h-[46px] bg-lightCardBG rounded-[15px] p-[.875rem] text-[.875rem] cursor-pointer"
+              class="card-shadow w-[200px] h-[46px] bg-lightCardBG rounded-[15px] p-[.875rem] text-[.875rem] cursor-pointer dark:bg-dmLightCardBG dark:text-dmNormalText"
               type="search"
               placeholder="Search..."
             />
@@ -140,7 +144,7 @@
           <!-- Pasta Type -->
           <div>
             <div
-              class="pasta-dropdown-btn card-shadow w-[200px] h-[46px] flex items-center justify-between bg-lightCardBG rounded-[15px] mx-auto md:mx-0 p-[.875rem] cursor-pointer"
+              class="pasta-dropdown-btn card-shadow w-[200px] h-[46px] flex items-center justify-between bg-lightCardBG rounded-[15px] mx-auto md:mx-0 p-[.875rem] cursor-pointer dark:bg-dmLightCardBG dark:text-dmNormalText"
             >
               <h2 class="text-[1rem] font-bold">Pasta Type</h2>
               <!-- Icon -->
@@ -149,32 +153,32 @@
               ></i>
             </div>
             <div
-              class="pasta-options card-shadow w-[200px] h-[200px] flex-wrap items-center justify-between bg-lightCardBG rounded-[15px] mx-auto md:mx-0 mt-[.5rem] p-[.875rem] hidden"
+              class="pasta-options card-shadow w-[200px] h-[200px] flex-wrap items-center justify-between bg-lightCardBG rounded-[15px] mx-auto md:mx-0 mt-[.5rem] p-[.875rem] hidden dark:bg-dmLightCardBG"
             >
               <button
                 id="spaghetti"
-                class="card-shadow w-[79px] h-[79px] flex flex-col items-center justify-end gap-[.5rem] bg-lightText rounded-[10px] p-[.125rem] pb-[.375rem] cursor-pointer hover:bg-lightBrown transition-all ease-in-out"
+                class="card-shadow w-[79px] h-[79px] flex flex-col items-center justify-end gap-[.5rem] bg-lightText rounded-[10px] p-[.125rem] pb-[.375rem] cursor-pointer hover:bg-lightBrown transition-all ease-in-out dark:bg-dmReallyCardBG dark:hover:bg-dmDarkBrown"
               >
                 <img class="h-[32px]" src="images/types/spaghetti.png" alt="" />
                 <p class="text-[.875rem]">Spaghetti</p>
               </button>
               <button
                 id="ravioli"
-                class="card-shadow w-[79px] h-[79px] flex flex-col items-center justify-end gap-[.5rem] bg-lightText rounded-[10px] p-[.125rem] pb-[.375rem] cursor-pointer hover:bg-lightBrown transition-all ease-in-out"
+                class="card-shadow w-[79px] h-[79px] flex flex-col items-center justify-end gap-[.5rem] bg-lightText rounded-[10px] p-[.125rem] pb-[.375rem] cursor-pointer hover:bg-lightBrown transition-all ease-in-out dark:bg-dmReallyCardBG dark:hover:bg-dmDarkBrown"
               >
                 <img class="h-[32px]" src="images/types/ravioli.png" alt="" />
                 <p class="text-[.875rem]">Ravioli</p>
               </button>
               <button
                 id="lasagna"
-                class="card-shadow w-[79px] h-[79px] flex flex-col items-center justify-end gap-[.55rem] bg-lightText rounded-[10px] p-[.125rem] pb-[.375rem] mt-[.875rem] cursor-pointer hover:bg-lightBrown transition-all ease-in-out"
+                class="card-shadow w-[79px] h-[79px] flex flex-col items-center justify-end gap-[.55rem] bg-lightText rounded-[10px] p-[.125rem] pb-[.375rem] mt-[.875rem] cursor-pointer hover:bg-lightBrown transition-all ease-in-out dark:bg-dmReallyCardBG dark:hover:bg-dmDarkBrown"
               >
                 <img class="h-[21px]" src="images/types/lasagne.png" alt="" />
                 <p class="text-[.875rem]">Lasagna</p>
               </button>
               <button
                 id="fettuccine"
-                class="card-shadow w-[79px] h-[79px] flex flex-col items-center justify-end gap-[.5rem] bg-lightText rounded-[10px] p-[.125rem] pb-[.375rem] mt-[.875rem] cursor-pointer hover:bg-lightBrown transition-all ease-in-out"
+                class="card-shadow w-[79px] h-[79px] flex flex-col items-center justify-end gap-[.5rem] bg-lightText rounded-[10px] p-[.125rem] pb-[.375rem] mt-[.875rem] cursor-pointer hover:bg-lightBrown transition-all ease-in-out dark:bg-dmReallyCardBG dark:hover:bg-dmDarkBrown"
               >
                 <img
                   class="h-[32px]"

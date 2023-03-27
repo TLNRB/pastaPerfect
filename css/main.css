@@ -1373,17 +1373,17 @@ body {
 }
 
 .img-shadow {
-  filter: drop-shadow(1px 6px 8px rgba(46, 46, 46, 0.4));
+  filter: drop-shadow(1px 6px 8px rgba(44, 44, 44, 0.4));
 }
 
 .sm-img-shadow {
-  filter: drop-shadow(1px 3px 5px rgba(46, 46, 46, 0.4));
+  filter: drop-shadow(1px 3px 5px rgba(44, 44, 44, 0.4));
 }
 
 .card-shadow {
-  box-shadow: 0px 0px 10px 0px rgba(41, 41, 41, 0.3);
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(40, 40, 40, 0.3);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(40, 40, 40, 0.3);
+  box-shadow: 0px 0px 10px 0px rgba(44, 44, 44, 0.3);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(44, 44, 44, 0.3);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(44, 44, 44, 0.3);
 }
 
 .card-img-left {
@@ -1494,14 +1494,24 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: rgb(48 42 38 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-dmLightCardBG {
+  --tw-bg-opacity: 1;
+  background-color: rgb(53 53 53 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-dmNormalCardBG {
   --tw-bg-opacity: 1;
-  background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+  background-color: rgb(41 41 41 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-dmRealyDarkBrown {
   --tw-bg-opacity: 1;
   background-color: rgb(39 36 33 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-dmReallyCardBG {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-dmLightText {
@@ -1512,6 +1522,11 @@ input[type="search"]::-webkit-search-results-decoration {
 .dark .dark\:text-dmNormalText {
   --tw-text-opacity: 1;
   color: rgb(162 162 162 / var(--tw-text-opacity));
+}
+
+.dark .dark\:hover\:bg-dmDarkBrown:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(90 75 61 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:hover\:text-dmNormalText:hover {
