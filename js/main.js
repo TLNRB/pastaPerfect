@@ -75,7 +75,7 @@ const scrollActive = () => {
 
   sections.forEach((section) => {
     const sectionHeight = section.offsetHeight,
-      sectionTop = section.offsetTop - 58,
+      sectionTop = section.offsetTop - 60,
       sectionId = section.getAttribute("id"),
       sectionsClass = document.querySelector("#nav a[href*=" + sectionId + "]");
 
