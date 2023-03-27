@@ -1401,9 +1401,14 @@ body {
   width: 100%;
   height: 10px;
   border-radius: 5px;
-  background: #f4f4f4;
   outline: none;
-  background-color: #e3dbd0;
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 219 208 / var(--tw-bg-opacity));
+}
+
+.dark .slider {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
 }
 
 .slider::-webkit-slider-thumb {
@@ -1411,6 +1416,16 @@ body {
   width: 18px;
   height: 18px;
   background-color: #a6907c;
+  --tw-bg-opacity: 1;
+  background-color: rgb(166 144 124 / var(--tw-bg-opacity));
+}
+
+.dark .slider::-webkit-slider-thumb {
+  --tw-bg-opacity: 1;
+  background-color: rgb(90 75 61 / var(--tw-bg-opacity));
+}
+
+.slider::-webkit-slider-thumb {
   border-radius: 50%;
   cursor: pointer;
   outline: none;
@@ -1443,7 +1458,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .bg-active {
-  background-color: #e3dbd0;
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 219 208 / var(--tw-bg-opacity));
+}
+
+.dark .bg-active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(90 75 61 / var(--tw-bg-opacity));
 }
 
 .hover\:scale-110:hover {
@@ -1501,17 +1522,17 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .dark .dark\:bg-dmNormalCardBG {
   --tw-bg-opacity: 1;
-  background-color: rgb(41 41 41 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:bg-dmRealyDarkBrown {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 36 33 / var(--tw-bg-opacity));
+  background-color: rgb(48 48 48 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-dmReallyCardBG {
   --tw-bg-opacity: 1;
   background-color: rgb(64 64 64 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-dmRealyDarkBrown {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 36 33 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-dmLightText {

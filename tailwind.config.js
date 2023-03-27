@@ -35,7 +35,7 @@ module.exports = {
         dmNormalText: "#A2A2A2",
         dmReallyCardBG: "#404040",
         dmLightCardBG: "#353535",
-        dmNormalCardBG: "#292929",
+        dmNormalCardBG: "#303030",
         dmDarkCardBG: "#252525",
         dmLightRedText: "#D9042B",
         dmDrkRedBtn: "#8C0327",
