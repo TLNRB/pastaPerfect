@@ -16,6 +16,19 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  @apply w-[.6rem];
+  @apply rounded-[.5rem];
+  @apply bg-lightCardBG;
+  @apply dark:bg-dmReallyCardBG;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-[.5rem];
+  @apply bg-darkBrown;
+  @apply dark:bg-dmNormalCardBG;
+}
+
 .active-link {
   position: relative;
 }
@@ -47,10 +60,12 @@ body {
 
 .img-shadow {
   filter: drop-shadow(1px 6px 8px rgba(44, 44, 44, 0.4));
+  @apply dark:brightness-75;
 }
 
 .sm-img-shadow {
   filter: drop-shadow(1px 3px 5px rgba(44, 44, 44, 0.4));
+  @apply dark:brightness-75;
 }
 
 .card-shadow {

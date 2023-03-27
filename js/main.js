@@ -4,6 +4,7 @@ const moon = document.querySelector("#moon");
 const sun = document.querySelector("#sun");
 const hamburger = document.querySelector("#hamburger");
 const closeButton = document.querySelector("#close-button");
+const logo = document.querySelector("#logo");
 //Theme Vars
 const userTheme = localStorage.getItem("theme");
 const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -14,10 +15,12 @@ const themeCheck = () => {
     document.documentElement.classList.add("dark");
     sun.classList.add("button-is-active");
     moon.classList.add("button-isnot-active");
+    logo.src = "images/icons8-spaghetti-light.png";
     return;
   }
   sun.classList.remove("button-is-active");
   moon.classList.remove("button-isnot-active");
+  logo.src = "images/icons8-spaghetti-50.png";
 };
 
 //Manual Theme Switch
@@ -27,12 +30,14 @@ const themeSwitch = () => {
     localStorage.setItem("theme", "light");
     sun.classList.remove("button-is-active");
     moon.classList.remove("button-isnot-active");
+    logo.src = "images/icons8-spaghetti-50.png";
     return;
   }
   document.documentElement.classList.add("dark");
   localStorage.setItem("theme", "dark");
   sun.classList.add("button-is-active");
   moon.classList.add("button-isnot-active");
+  logo.src = "images/icons8-spaghetti-light.png";
 };
 
 //Light Mode On
