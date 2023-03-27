@@ -41,7 +41,7 @@ const recepies = [
     description:
       "Pasta alla Boscaiola is a classic Italian pasta dish that translates to pasta with the woodsman's sauce. The rustic flavors of the dish evoke the flavors of a cozy autumn day in the Italian countryside.",
     pastaType: "./images/types/penne.svg",
-    pastaTypeName: "Penne",
+    pastaTypeName: "Fettuccine",
     levelOfSkill: "Easy",
     time: "30 min",
     ingridients: [

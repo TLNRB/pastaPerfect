@@ -72,7 +72,6 @@ skillDropdown.addEventListener("click", () => {
 });
 
 //========== Filter and Display Section ==========
-
 //========== Slider Filter Section ==========
 const slider = document.querySelector(".slider");
 const skill = document.querySelector(".skill");
@@ -104,14 +103,16 @@ const ravioli = document.querySelector("#ravioli");
 
 let pastaFilter = [];
 
-function checkFilters(value) {
+function checkFilters(value, id) {
   // Check if value is in array
   if (pastaFilter.includes(value)) {
     // If value is in array, remove it
     pastaFilter = pastaFilter.filter((item) => item !== value);
+    id.classList.remove("bg-active");
   } else {
     // If value is not in array, add it
     pastaFilter.push(value);
+    id.classList.add("bg-active");
   }
 
   console.log(pastaFilter);
@@ -119,16 +120,16 @@ function checkFilters(value) {
 }
 
 spaghetti.addEventListener("click", () => {
-  checkFilters("Spaghetti");
+  checkFilters("Spaghetti", spaghetti);
 });
 lasagna.addEventListener("click", () => {
-  checkFilters("Lasagne");
+  checkFilters("Lasagne", lasagna);
 });
 fettuccine.addEventListener("click", () => {
-  checkFilters("Fettuccine");
+  checkFilters("Fettuccine", fettuccine);
 });
 ravioli.addEventListener("click", () => {
-  checkFilters("Ravioli");
+  checkFilters("Ravioli", ravioli);
 });
 
 //========== Filter Section ==========
@@ -156,7 +157,7 @@ filterBtn.addEventListener("click", () => {
           return recepie;
         }
       }
-    } else {
+    } else if (pastaFilter.length != 0) {
       for (let i = 0; i < pastaFilter.length; i++) {
         if (recepie.pastaTypeName == pastaFilter[i]) {
           return recepie;
@@ -165,6 +166,8 @@ filterBtn.addEventListener("click", () => {
           continue;
         }
       }
+    } else {
+      return recepie;
     }
   });
   displayRecepies(filteredRecepiesByBtn);
