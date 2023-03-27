@@ -66,3 +66,24 @@ closeButton.addEventListener("click", () => {
   hamburger.classList.remove("button-isnot-active");
   closeButton.classList.remove("button-is-active");
 });
+
+//Scroll to active-link
+const sections = document.querySelectorAll("section[id]");
+
+const scrollActive = () => {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach((section) => {
+    const sectionHeight = section.offsetHeight,
+      sectionTop = section.offsetTop - 58,
+      sectionId = section.getAttribute("id"),
+      sectionsClass = document.querySelector("#nav a[href*=" + sectionId + "]");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionsClass.classList.add("active-link");
+    } else {
+      sectionsClass.classList.remove("active-link");
+    }
+  });
+};
+window.addEventListener("scroll", scrollActive);
