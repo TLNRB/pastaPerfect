@@ -77,7 +77,7 @@ const recepies = [
       "The simplest and most delicious of sauces, butter and sage, encounters the stuffed pasta par excellence, ravioli: this is how a classic dish of Italian Sunday lunches takes shape.",
     pastaType: "./images/types/ravioli.svg",
     pastaTypeName: "Ravioli",
-    levelOfSkill: "Average",
+    levelOfSkill: "Intermediate",
     time: "1 hr 15 min",
     ingridients: [
       "250g Flour",
@@ -241,7 +241,7 @@ const recepies = [
       "Of all the wonderful seafood pasta recipes from Italy, pasta alle vongole is the top of the best seller list. It is flavoured with garlic, chilli, white wine and parsley.",
     pastaType: "./images/types/spaghetti.svg",
     pastaTypeName: "Spaghetti",
-    levelOfSkill: "Easy",
+    levelOfSkill: "Intermediate",
     time: "40 min",
     ingridients: [
       "400g Spaghetti",

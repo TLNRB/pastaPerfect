@@ -71,9 +71,14 @@ skillDropdown.addEventListener("click", () => {
   skillLevel.classList.toggle("active");
 });
 
+//========== Filter and Display Section ==========
+
 //========== Slider Filter Section ==========
 const slider = document.querySelector(".slider");
 const skill = document.querySelector(".skill");
+const skillDropBtn = document.querySelector(".skill-dropdown-btn");
+
+let skillFilter = "";
 
 slider.addEventListener("input", () => {
   const value = Number(slider.value);
@@ -88,38 +93,79 @@ slider.addEventListener("input", () => {
     slider.value = 95;
     skill.innerHTML = "Hard";
   }
+  skillFilter = skill.innerHTML;
 });
 
-//========== Filter and Display Section ==========
+//========== Pasta Type Filter Section ==========
 const spaghetti = document.querySelector("#spaghetti");
 const lasagna = document.querySelector("#lasagna");
 const fettuccine = document.querySelector("#fettuccine");
 const ravioli = document.querySelector("#ravioli");
-let pasta = [];
+
+let pastaFilter = [];
 
 function checkFilters(value) {
   // Check if value is in array
-  if (pasta.includes(value)) {
+  if (pastaFilter.includes(value)) {
     // If value is in array, remove it
-    pasta = pasta.filter((item) => item !== value);
+    pastaFilter = pastaFilter.filter((item) => item !== value);
   } else {
     // If value is not in array, add it
-    pasta.push(value);
+    pastaFilter.push(value);
   }
 
-  // Log the current state of the array
-  console.log(pasta);
+  console.log(pastaFilter);
+  console.log(skillFilter);
 }
 
 spaghetti.addEventListener("click", () => {
   checkFilters("Spaghetti");
 });
 lasagna.addEventListener("click", () => {
-  checkFilters("Lasagna");
+  checkFilters("Lasagne");
 });
 fettuccine.addEventListener("click", () => {
   checkFilters("Fettuccine");
 });
 ravioli.addEventListener("click", () => {
   checkFilters("Ravioli");
+});
+
+//========== Filter Section ==========
+const filterBtn = document.querySelector("#filterButton");
+
+filterBtn.addEventListener("click", () => {
+  searchInput.value = "";
+  searchInput.addEventListener("blur", () => {
+    icon.style.display = "block";
+  });
+
+  const filteredRecepiesByBtn = recepies.filter((recepie) => {
+    if (skillDropBtn.classList.contains("active")) {
+      if (recepie.levelOfSkill === skillFilter) {
+        if (pastaFilter.length != 0) {
+          for (let i = 0; i < pastaFilter.length; i++) {
+            if (recepie.pastaTypeName === pastaFilter[i]) {
+              return recepie;
+              break;
+            } else {
+              continue;
+            }
+          }
+        } else {
+          return recepie;
+        }
+      }
+    } else {
+      for (let i = 0; i < pastaFilter.length; i++) {
+        if (recepie.pastaTypeName == pastaFilter[i]) {
+          return recepie;
+          break;
+        } else {
+          continue;
+        }
+      }
+    }
+  });
+  displayRecepies(filteredRecepiesByBtn);
 });
